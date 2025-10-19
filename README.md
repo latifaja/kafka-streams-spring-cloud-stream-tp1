@@ -67,6 +67,7 @@ public class PageEventController {
 
 **Usage**:
 - Send a `PageEvent` to `T1` via GET request: `/publish?name=pageName&topic=T1`.
+  
 <img src="images/Image5.png">
 - The event is published and returned in the response.
  
@@ -104,7 +105,8 @@ public class PageEventHandler {
 
 **Result**:
 - Events published to `T1` are received and logged to the console.
-  <img src="images/image6.png">
+  
+  <img src="images/Image6.png">
 
 **Producing PageEvent Every 200ms (Supplier)**
 
@@ -144,7 +146,8 @@ public class PageEventHandler {
 
 **Result**:
 - A `PageEvent` is sent to `T1` every 200ms with random `name` (`P1` or `P2`), `user` (`U1` or `U2`), and `duration`.
-  <img src="images/image10.png">
+  
+  <img src="images/Image10.png">
 
 **Real-Time Processing with Kafka Streams**
 
@@ -192,7 +195,8 @@ public class PageEventHandler {
 
 **Result**:
 - Events with `duration > 100` are filtered, grouped by `name`, and counted in 5-second windows, stored in `count-store`.
-  <img src="images/image12.png">
+  
+  <img src="images/Image12.png">
 
 **Visualizing Processed Data**
 
@@ -245,9 +249,11 @@ public class PageEventController {
 
 **Result**:
 - The `/analytics` endpoint streams a map of page names and event counts every second, based on the last 5 seconds of data from `count-store`.
-  <img src="images/image14.png">
+  
+  <img src="images/Image14.png">
 - Visualisation :
-  <img src="images/image15.png">
+  
+  <img src="images/Image15.png">
 
 **Configuration Summary**
 
