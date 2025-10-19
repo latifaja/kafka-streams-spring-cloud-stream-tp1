@@ -67,7 +67,7 @@ public class PageEventController {
 
 **Usage**:
 - Send a `PageEvent` to `T1` via GET request: `/publish?name=pageName&topic=T1`.
-<img src="images/image5.png">
+<img src="images/Image5.png">
 - The event is published and returned in the response.
  
 
